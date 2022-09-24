@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+}
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    position: center;
+    height: 100vh;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    height: 480px;
+    background-image: url("./img/eleitoral.jpg");
+    background-size: cover;
+    border: 5px solid rgb(233, 233, 233);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.result #resultado{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 150px; 
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.result #candidato{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px; 
+    width: 600px;
+    height: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 10px;
+}
+#campo1{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#campo2{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#campo3{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+}
+#campo4{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+}
+#campo5{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+}
+#campo6{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+}
+.logo{
+    background-color: #fff;
+}
+.logo img{
+    width: 100%;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.painel{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 420px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+    border: 5px solid rgb(233, 233, 233);
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.botao{
+    background-color: rgb(0, 0, 0);
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.verde{
+    background-color: greenyellow;
+    width: 110px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.branco{
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.laranja{
+    background-color: rgb(255, 157, 0);
+    width: 110px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.verde:hover{
+    color: rgb(255, 255, 255);
+}
+.branco:hover{
+    background-color: rgb(208, 208, 208);
+    color: rgb(0, 0, 0);
+}
+.verde:hover{
+    background-color: rgb(87, 163, 0);
+    color: rgb(0, 0, 0);
+}
+.botao:hover{
+    background-color: rgb(0, 0, 0);
+    color: orange;    
+}

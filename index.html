@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URNA ELEITORAL - ELEICOES 2022 - JUSTICA ELEITORAL BRASILEIRA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><a href="resultado.html">P</a></div>
+    
+    <div class="container">
+            <div class="result">
+                <p>Número:</p>
+                <form action="https://api.sheetmonkey.io/form/u9gVTzB2NbsqojJSU9P4un" method="post">
+                    <input size="1" id="campo1" value="" maxlength="1" type="text" readonly="readonly" name="Campo1"/>
+                    <input size="1" id="campo2" value="" maxlength="1" type="text" readonly="readonly" name="Campo2"/>
+                </form>
+                <p id="candidato" value=""></p>
+            </div>
+            <div class="painel">
+                <div class="logo"><img src="./img/jus.jpg" alt=""></div>
+                  <div class="botoes">
+                    <table>
+                    <tr>
+                    <td><button class="botao" onclick="inserir('1')">1</button></td> 
+                    <td><button class="botao" onclick="inserir('2')">2</button></td> 
+                    <td><button class="botao" onclick="inserir('3')">3</button></td> 
+                    <td rowspan="2"></td> 
+                    </tr>
+                    <tr>
+                    <td><button class="botao" onclick="inserir('4')">4</button></td> 
+                    <td><button class="botao" onclick="inserir('5')">5</button></td> 
+                    <td><button class="botao" onclick="inserir('6')">6</button></td> 
+                    </tr>
+                    <tr>
+                    <td><button class="botao" onclick="inserir('7')">7</button></td> 
+                    <td><button class="botao" onclick="inserir('8')">8</button></td> 
+                    <td><button class="botao" onclick="inserir('9')">9</button></td> 
+                    </tr>
+                              
+                    <tr>
+                    <td></td>
+                    <td><button class="botao" onclick="inserir('0')">0</button></td> 
+                    </tr>
+                    </table>
+                    <div class="colors">
+                    <button type="submit" class="branco" onclick="branco()">BRANCO</button>
+                    <button type="submit" class="laranja" onclick="corrige()">CORRIGE</button>
+                    <button type="submit" class="verde" onclick="votar()">CONFIRMA</button>
+                </div>
+                
+            </div>       
+        
+    </div>
+    
+</body>
+<script src="./code.js"></script>
+<audio id="musica" src="./sounds/theme1.mp3" preload="auto">
+    <audio id="musica2" src="./audio/confirma.mp3" preload="auto"> 
+        <script >let html = document.querySelector("html");
+        let musica = document.querySelector("#musica");
+        html.addEventListener('click', () => {
+        musica.play();
+        })
+      </script>
+</html>
